@@ -102,6 +102,103 @@ section{ margin-top: 2rem;
 }
 
 
+*Individual skill heights*/
+.html{
+  height: 95%;
+  background: #f16529;
+  animation-delay: 0.2s;
+}
+@keyframes grow{
+  0%{
+    height: 0%;
+  }
+  95%{
+    height: inherit;
+  }
+}
+.css{
+  height: 87%;
+  background: #2965f1;
+  animation-delay: 0.4s;
+}
+/*@keyframes grow{
+  0%{
+    height: 0%;
+  }
+  87%{
+    height: inherit;
+  }*/
+.js{
+  height: 35%;
+  background: #f0db4f;
+  animation-delay: 0.6s;
+}
+/*@keyframes grow{
+  0%{
+    height: 0%;
+  }
+  35%{
+    height: inherit;
+  }*/
+.design{
+  height: 70%;
+  background: #a259ff;
+  animation-delay: 0.8s;
+}
+/*@keyframes grow{
+  0%{
+    height: 0%;
+  }
+  70%{
+    height: inherit;
+  }
+  
+
+
+/*@keyframes grow{
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: inherit;
+  }
+}*/
+
+/*Responsive*/
+@media screen and
+(max-width:600px;){
+  .skill-graph{
+    gap:15px;
+  }
+  .skill-bar{
+    width: 45px;
+  }
+  .skill-bar span{
+    font-size: 12px;
+  }
+}
+
+form input,form textarea{
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+footer{
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/*dark mode*/
+.dark{
+  background-color:#111 ;
+  color:#eee ;
+}
+
 
 
 
