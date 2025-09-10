@@ -9,7 +9,7 @@
 <body>
 
     <!--the header-->
-  <header>
+  <header id="header">
     <!--navbar starts here-->
     <nav>
         <!--my heading-->
@@ -18,14 +18,14 @@
         <!--navlinks start here-->
         <ul>
             <li><a href="#HOME">HOME</a></li>
-            <li><a href="#ABOUT ME">ABOUT ME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
             <li><a href="#PROJECTS">PROJECTS</a></li>
             <li><a href="#SKILLS">SKILLS</a></li>
-            <li><a href="#CONTACT ME">CONTACT ME</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
 
             <!--dark mode / light mode button-->
 
-            <li><button onclick="toggleMode()"></button></li>
+            <li><button onclick="toggleMode()">.</button></li>
 
         </ul>
     <!--navlinks end here-->
@@ -34,11 +34,182 @@
   </header>
    
   <!--sections begin here-->
-  <section id="home">
+
+  <section id="HOME">
+
+    <!--mother div-->
+    <div class="container">
+
+       <!--left div-->
+        <div class="left">
+            <h2>Hi ,</h2>
+            <h2>Am , Trinity Nkasiima</h2>
+        </div>
+
+        <!--right div-->
+        <div class="right">
+            <h2>A Frontend WebDeveloper</h2>
+        </div>
+    </div>
+
+    <button id="connect">LET'S CONNECT</button>
+
+    <!--HOME SECTION ENDS HERE-->
 
   </section>
 
+  <!--about section begins here-->
+  <section id="ABOUT">
+    <h2 class="heading">About Me</h2>
 
+    <p>I am a passionate Web Developer currently learning with CodeQueen Cohort 14.</p>
+     
+    <!--cv button-->
+    <button id="connect">DOWNLOAD CV</button>
+  </section>
+  <!--about section ends here-->
+
+  <!--projects section begins here-->
+  <section id="PROJECTS">
+    <h2 class="heading">Projects</h2>
+  
+    <!--list of the projects-->
+    <!--cards start here-->
+    <!--mother div-->
+    <div class="mother">
+        <!--card 1-->
+
+        <div card1>
+            <!--image for project 1-->
+            <span class="image">
+            <img src="" alt="" width="" height="">
+            <!--title-->
+            <p class="title">Landing Page</p>
+            <!--description for item 1-->
+            <p class="description"></p>
+            <!--project link-->
+            <p class="link"><a href=""></a></p>
+            </span>
+        </div>
+
+
+    
+        <div card2>
+            <!--image for project 2-->
+            <span class="image">
+            <img src="" alt="" width="" height="">
+            <!--title-->
+            <p class="title">Login Form</p>
+            <!--description for project 2-->
+            <p class="description"></p>
+            <!--project link-->
+            <p class="link"><a href=""></a></p>
+            </span>
+        </div>
+
+
+        <div card3>
+            <!--image for project 3-->
+            <span class="image">
+            <img src="" alt="" width="" height="">
+            <!--title-->
+            <p class="title">Cv card</p>
+            <!--description for project 3-->
+            <p class="description"></p>
+            <!--project link-->
+            <p class="link"><a href=""></a></p>
+            </span>
+        </div>
+
+
+        </div>
+  </section>
+
+  <!--projects section ends here-->
+
+  <!--skills section begins here-->
+  <section id="SKILLS">
+    <h2 class="heading">My Skills </h2>
+
+    <!--graph starts here-->
+    <div class="skill-graph">
+
+        <div class="skill-bar">
+            <div class="fill html" data-tooltip="95%">
+                <span>95%</span></div>
+                <span>HTML</span>
+        </div>
+
+         <div class="skill-bar">
+            <div class="fill css" data-tooltip="85%">
+                <span>85%</span></div>
+                <span>CSS</span>
+        </div>
+
+        <div class="skill-bar">
+            <div class="fill design" data-tooltip="70%">
+                <span>70%</span></div>
+                <span>UX/UI</span>
+        </div>
+
+         <div class="skill-bar">
+            <div class="fill js" data-tooltip="45%">
+                <span>45%</span></div>
+                <span>JavaScript</span>
+        </div>
+
+    </div>
+
+    <!--tools-->
+    <div class="tools">
+        <h2 class="heading">Tools</h2>
+        <div>
+            <img src="" alt="Vscode" width="">
+        </div>
+
+        <div>
+            <img src="" alt="Github" width="">
+        </div>
+
+        <div>
+            <img src="" alt="Figma" width="">
+        </div>
+
+        <div>
+            <img src="" alt="Node.js" width="">
+        </div>
+
+    </div>
+
+  </section>
+  <!--skills section ends here-->
+
+  <section id="CONTACT">
+    <h2 class="heading">Contact Me</h2>
+
+    <!--contact form begins here!-->
+
+    <form action="">
+        <input type="text" placeholder="Your Name" required/>
+         <input type="email" placeholder="Your Email" required/>
+
+         <!--text box-->
+        <textarea placeholder="Message"></textarea>
+        <!--submit button-->
+        <button type="submit">Send</button>
+    </form>
+    <!--form ends here-->
+  </section>
+<!--contact section ends here-->
+
+<!--back to top button-->
+  <button><a href="#header">Back to top</a></button>
+
+  <footer>
+    <p>Trinity Nkasiima 2025</p>
+  </footer>
+
+   
 
 
 

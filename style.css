@@ -7,13 +7,21 @@
 
 body{
     background-color: #fff;
-    color:#333;
+   /* color:#333;*/
     transition: all 0.3s ease;
 }
 
+h1{
+    text-align: center;
+    background:linear-gradient(to right, azure,violet,lightblue,deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 header{
-    background-color: #000;
-    color: #fff;
+    background-color: #333;
+   /* color: #fff;*/
     padding: 1rem;
 }
 
@@ -27,4 +35,161 @@ nav ul{
     display: flex;
     gap: 1rem;
     list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.heading{text-align: center;
+     background:linear-gradient(to right, deeppink 20%,skyblue ,#ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+   margin: 1.5rem;
+   width: 50%;
+}
+
+.right{
+    margin: 1.5rem;
+   width: 50%;
+}
+
+#connect{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: aquamarine;
+    transition: background-color 0.2s ease;
+}
+
+#connect:hover{
+    background-color: green;
+}
+
+section{ margin-top: 2rem;
+    padding: 4rem 0 4rem 0;
+}
+
+.mother{
+    /*height: 320px;*/
+    margin: 0;
+    display: flex;
+    
+}
+
+.card1{border: none;
+    border-radius: 10px;
+    width: 135px;
+    height: 260px;
+    background-color: aquamarine;
+    margin-left: 2rem 2rem 1rem ;
+    padding: ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tools img{
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#CONTACT{
+    background: gray;
+}
+
+.skill-graph{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    height: 300px;
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.skill-bar{
+    position: relative;
+    width: 60px;
+    height: 100%;
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.skill-bar span{
+    margin-top: 10px;
+    font-size: 4px;
+    text-align: center;
+}
+
+.fill{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    animation: grow 2s ease forwards;
+}
+
+.fill span{
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/*tooltips*/
+.fill::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    background: #333;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.3s ease;
+    pointer-events: none;
 }
