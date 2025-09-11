@@ -37,8 +37,11 @@ nav ul{
     list-style: none;
 }
 
-nav a {
-    color: white;
+nav a { background:linear-gradient(to right, deeppink 20%,skyblue ,#ff9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /*color: white;*/
     text-decoration: none;
 }
 
@@ -289,9 +292,57 @@ button a{
 }
 
 
+.about{
+  margin: 1.5rem;
+}
+
+#ABOUT{
+  background:linear-gradient(to right, BLUE 30%,DEEPpink,indigo ,#ff9800);
+}
+ .with-background::before{
+  opacity: 0.1;
+ }
 
 
+.about p {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
 
+#my-journey{background-image: url(journey.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 50px 20px;
+  text-align: center;
+
+}
+
+.with-background::before{
+    opacity: 0.5;
+
+}
+
+#my-journey p{
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.journey{
+    background:linear-gradient(to right, BLUE 80%,DEEPpink,indigo ,#ff9800);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+
+}
 
 
 
