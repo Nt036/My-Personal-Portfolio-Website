@@ -25,7 +25,7 @@
 
             <!--dark mode / light mode button-->
 
-            <li><button onclick="toggleMode()">.</button></li>
+            <li><button onclick="toggleMode()">🌙</button></li>
 
         </ul>
     <!--navlinks end here-->
@@ -71,115 +71,88 @@
 
   <!--projects section begins here-->
   <section id="PROJECTS">
-    <h2 class="heading">Projects</h2>
-  
-    <!--list of the projects-->
-    <!--cards start here-->
-    <!--mother div-->
-    <div class="mother">
-        <!--card 1-->
 
-        <div card1>
-            <!--image for project 1-->
-            <span class="image">
-            <img src="" alt="" width="" height="">
-            <!--title-->
-            <p class="title">Landing Page</p>
-            <!--description for item 1-->
-            <p class="description"></p>
-            <!--project link-->
-            <p class="link"><a href=""></a></p>
-            </span>
-        </div>
+     <h2 class="heading">Projects</h2>
+     <!--list of the projects-->
+<div class="projects">
+  
+  
+  <!-- Always visible -->
+  <div class="project-images">
+    <img src="project1.jpg" alt="Project 1">
+    <img src="project2.jpg" alt="Project 2">
+  </div>
+
+  <!-- Hidden initially -->
+  <div class="more-projects hidden" id="moreProjects">
+    <img src="project 3.jpg" alt="Project 3">
+    <img src="project 4.jpg" alt="Project 4">
+  </div>
+
+  <!-- Arrow -->
+  <div class="arrow" onclick="toggleProjects()">&#x25BC;</div>
+</div>
 
 
     
-        <div card2>
-            <!--image for project 2-->
-            <span class="image">
-            <img src="" alt="" width="" height="">
-            <!--title-->
-            <p class="title">Login Form</p>
-            <!--description for project 2-->
-            <p class="description"></p>
-            <!--project link-->
-            <p class="link"><a href=""></a></p>
-            </span>
-        </div>
-
-
-        <div card3>
-            <!--image for project 3-->
-            <span class="image">
-            <img src="" alt="" width="" height="">
-            <!--title-->
-            <p class="title">Cv card</p>
-            <!--description for project 3-->
-            <p class="description"></p>
-            <!--project link-->
-            <p class="link"><a href=""></a></p>
-            </span>
-        </div>
-
-
-        </div>
+       
   </section>
 
   <!--projects section ends here-->
 
-  <!--skills section begins here-->
-  <section id="SKILLS">
-    <h2 class="heading">My Skills </h2>
+
 
     <!--graph starts here-->
+ <!--skills section begins here-->
+    <section id="SKILLS">
+      
+    <h2 class="heading">My Skills</h2>
     <div class="skill-graph">
-
-        <div class="skill-bar">
-            <div class="fill html" data-tooltip="95%">
-                <span>95%</span></div>
-                <span>HTML</span>
-        </div>
-
-         <div class="skill-bar">
-            <div class="fill css" data-tooltip="85%">
-                <span>85%</span></div>
-                <span>CSS</span>
-        </div>
-
-        <div class="skill-bar">
-            <div class="fill design" data-tooltip="70%">
-                <span>70%</span></div>
-                <span>UX/UI</span>
-        </div>
-
-         <div class="skill-bar">
-            <div class="fill js" data-tooltip="45%">
-                <span>45%</span></div>
-                <span>JavaScript</span>
-        </div>
-
+      
+    <div class="skill-bar">
+      <div class="fill html" data-tooltip="95%"><span>95%</span></div>
+      <span style="font-size: 1rem;"> <b>HTML</b></span>
+     </div>
+     
+     <div class="skill-bar">
+       <div class="fill css" data-tooltip="87%"><span>87%</span></div>
+       <span style="font-size:1rem;"><b>CSS</b></span>
+     </div>
+     
+      <div class="skill-bar">
+       <div class="fill design"data-tooltip="70%">70%</div>
+       <span style="font-size: 1rem;"><b>UX/UI</b></span>
+     </div>
+     
+     
+     <div class="skill-bar">
+       <div class="fill js" data-tooltip="35%"><span>35%</span></div>
+  
+       <span style="font-size: 1rem;"><b>JavaScript</b></span>
+     </div>
+     
     </div>
 
+    <!--my skills stop here-->
+   
     <!--tools-->
+
     <div class="tools">
-        <h2 class="heading">Tools</h2>
-        <div>
-            <img src="" alt="Vscode" width="">
-        </div>
-
-        <div>
-            <img src="" alt="Github" width="">
-        </div>
-
-        <div>
-            <img src="" alt="Figma" width="">
-        </div>
-
-        <div>
-            <img src="" alt="Node.js" width="">
-        </div>
-
+      <h2 class="heading">Tools</h2>
+      <div class="tool">
+        <h4>Vscode</h4>
+      <img src="Vscode.png" alt="Vscode" width="10%" >
+      </div>
+      
+      
+      <div class="tool">
+        <h4>FIGMA</h4>
+      <img src="figma.png" alt="Figma" width="10%" >
+      </div>
+      
+      
     </div>
+
 
   </section>
   <!--skills section ends here-->
@@ -196,14 +169,33 @@
          <!--text box-->
         <textarea placeholder="Message"></textarea>
         <!--submit button-->
-        <button type="submit">Send</button>
+        <button type="submit" style="display: block; margin: 0 auto; margin-top: 10px;
+        padding: 0.5rem 1rem; background-color: rgb(23, 23, 211); border: none;">SEND</button>
     </form>
     <!--form ends here-->
+
+    <h3 style="margin: 0.2rem; text-align: center;">OR</h3>
+
+    <div class="me">
+    <button style="
+    display: block;
+    margin:0 auto; margin-top: 1rem;  ">  <a href="https://www.linkedin.com/posts/trinity-nkasiima-b47070374_codequeen-codingjourney-womenintech-activity-7349414353500033024-3aTS?utm_source=share&utm_medium=member_android&rcm=ACoAAFyOvWcBy1hsIgmzqHX-M-YGeEwsgrC-kXI">LinkedIn</a></button>
+  
   </section>
 <!--contact section ends here-->
 
+
 <!--back to top button-->
-  <button><a href="#header">Back to top</a></button>
+    <button style="
+    display: block;
+    margin:0 auto;
+    margin-top: 1rem;
+    background-color: aqua;
+    
+
+    "><a href="#navbar">back to top </a></button>
+    
+    
 
   <footer>
     <p>Trinity Nkasiima 2025</p>
