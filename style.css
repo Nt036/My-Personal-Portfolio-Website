@@ -40,6 +40,7 @@ nav ul{
 nav a { background:linear-gradient(to right, deeppink 20%,skyblue ,#ff9800);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 0.5rem;
 
     /*color: white;*/
     text-decoration: none;
@@ -111,14 +112,21 @@ section{ margin: 2rem 1rem 0 1rem;
     padding: 4rem 0 4rem 0;
     border-radius: 5%;
     background-color: #535050;
+    transition: box-shadow 0.01s ease;
+
 }
+
+section:hover{
+  box-shadow: 0.1rem  0.5rem 2rem lightskyblue;
+}
+
 
 .skill-graph{
   display: flex;
   justify-content: center;
   align-items: end;
   gap: 20px;
-  height: 600px;
+  height: 700px;
   max-width: 600px;
   margin: auto;
   font-family: Sans-Serif;
@@ -126,7 +134,7 @@ section{ margin: 2rem 1rem 0 1rem;
 
 .skill-bar{
   position: relative;
-  width: 60px;
+  width: 50px;
   height: 100%;
   background: #ddd;
   border-radius: 8px;
@@ -297,7 +305,7 @@ button a{
 }
 
 #ABOUT{
-  background:linear-gradient(to right, BLUE 30%,DEEPpink,indigo ,#ff9800);
+  background:linear-gradient(to right, ivory,lightgray,#00bcd4,lavender,#e6f9f5 ,DEEPpink,#ff9800);
 }
  .with-background::before{
   opacity: 0.1;
@@ -307,6 +315,7 @@ button a{
 .about p {
   font-size: 1.4rem;
   margin: 0.5rem;
+  color: #333333;
 }
 
 #my-journey{background-image: url(journey.jpg);
@@ -336,7 +345,7 @@ button a{
 
 .journey{
     background:linear-gradient(to right, BLUE 80%,DEEPpink,indigo ,#ff9800);
-  -webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: right;
     margin-bottom: 0;
@@ -346,13 +355,16 @@ button a{
 
 
 
+#CONTACT{background-image: url(contact.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.with-background::before{
+    opacity: 0.5;
 
-
-
-
-
-
+}
 
 
 
